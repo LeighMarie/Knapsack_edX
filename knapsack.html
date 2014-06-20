@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Knapsack Problem</title>
+        <link rel="stylesheet" type="text/css" href="knapsack.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js"></script>
+        <script src="knapsack.js"></script>
+        <style type="text/css"></style>
+    </head>
+
+    <body>
+    <div class="knapsack" data-maxweight="20">
+        <div class="alert"> Oops! Knapsack capacity exceeded!</div>
+        <div class = "itemBox">
+            <div class = "header"> <img src="house.png"> </div>
+            <div class = "items" id = "house">
+              <div class = "item" id="1"> </div>
+              <div class = "item" id="2"> </div>
+              <div class = "item" id ="3"> </div>
+              <div class = "item" id ="4"> </div>
+              <div class = "item" id ="5"> </div>
+              <div class = "item" id ="6"> </div>
+            </div>
+            <div class="footer">Click item to move to knapsack</div>
+        </div>
+        <div class = "itemBox">
+            <div class = "header"> <img src="burglar.png"> ($
+            <span id="value"> 0 </span> ,
+            <span id="weight"> 0 </span> kg)
+            </div>
+            <div class = "items" id="sack"> </div>
+            <div class="footer">Click item to move to house</div>
+        </div>  
+        <div class="options">
+            <button id="startOver">Click to steal new items!</button>
+        </div> 
+        <div class="options">
+            <div class = "header" id="textOnly"> How much of your sack is full?  </div>
+            <div class = "items" id = "chart"></div>
+            <div class="footer">Pie Chart Display</div>
+        </div>
+        </div>
+    </body>
+</html>
